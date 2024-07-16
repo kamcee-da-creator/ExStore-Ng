@@ -1,0 +1,113 @@
+@media (max-width: 998px) {
+  .nav__links {
+    flex-direction: column;
+    align-items: center;
+    background: hsla(0, 0%, 0%, 0.823);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 2rem;
+    transform: translateY(-100%);
+    transition: 0.5s linear;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .cta {
+  transition: 1s;
+    position: absolute;
+    top: 30rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: baseline;
+    transform: translateX(-300%);
+  }
+  .nav__links li {
+    display: block;
+    padding: 20px 0;
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 4px 0;
+  }
+  .close-icon {
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 787px){
+  .genres-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px !important;
+  }
+}
+@media screen and (max-width: 787px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav-item .hero-section {
+    background: url(./../img/bannerpromotion.png);
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .hero-flex {
+    width: 100%;
+    padding: 0 2rem 2rem;
+  }
+  .game-box {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+    gap: 10px;
+  }
+  .gamebox-items {
+    margin-bottom: 2rem;
+  }
+  .genres-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px !important;
+  }
+  .genre {
+    width: 100%;
+  }
+  .genre img {
+    height:70px;
+  }
+  .best-seller{
+display: flex;
+flex-direction: column;
+  }
+  a img{
+    width: 200px;
+  }
+
+}

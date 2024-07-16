@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-blue: #3b44f6;
+  --color-blue3: #000ce9;
+  --color-blue2: #767cf9;
+  --color-skyblue2: #d8dafd;
+  --color-skyblue1: #00d7ff;
+  --color-skyblue3: #66e7ff;
+  --color-white: #e7f7ff;
+  --color-black: #181818;
+  --color-black2: #000000;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: absolute;
+  width: 100vw;
+}
+header img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav__links li a {
+  transition: all 0.3 ease 0s;
+}
+.nav__links li a:hover {
+  color: var(--color-skyblue1);
+}
+button {
+  padding: 9px 25px;
+  background-color: var(--color-blue3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  color: white;
+}
+button:hover {
+  background-color: var(--color-blue2);
+}
+
+/* Responsive Design */
+@media (max-width: 878px) {
+  .nav__links {
+    flex-direction: column;
+    align-items: center;
+    background: hsla(0, 0%, 0%, 0.823);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 2rem;
+    transform: translateY(-100%);
+    transition: 0.5s linear;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .cta {
+  transition: 1s;
+    position: absolute;
+    top: 30rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: baseline;
+    transform: translateX(-300%);
+  }
+  .nav__links li {
+    display: block;
+    padding: 20px 0;
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 4px 0;
+  }
+  .close-icon {
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+}
+.menu-icon {
+  transition: 0.5s;
+}
+/* Show nav and close icon when menu is open */
+.nav-open .nav__links {
+  transform: translateY(0);
+}
+.nav-open .cta {
+    transform: translateX(00%);
+}
+.nav-open .menu-icon {
+  display: none;
+}
+.nav-open .close-icon {
+  display: block;
+  color: white;
+  z-index: 900000;
+}
+
+/* media */
