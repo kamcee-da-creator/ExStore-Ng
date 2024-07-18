@@ -66,8 +66,8 @@
     overflow-x: hidden;
   }
 
-  nav-item .hero-section {
-    background: url(./../img/bannerpromotion.png);
+ .hero-section {
+    background: url(./../img/diego-marin-dMoBlbpDnAE-unsplash.jpg) !important;
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: left; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */

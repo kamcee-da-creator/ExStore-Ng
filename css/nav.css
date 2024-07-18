@@ -85,7 +85,7 @@ button:hover {
     justify-content: space-between;
   }
   .cta {
-  transition: 1s;
+    transition: 1s;
     position: absolute;
     top: 30rem;
     align-items: center;
@@ -127,7 +127,7 @@ button:hover {
   transform: translateY(0);
 }
 .nav-open .cta {
-    transform: translateX(00%);
+  transform: translateX(00%);
 }
 .nav-open .menu-icon {
   display: none;
@@ -139,3 +139,45 @@ button:hover {
 }
 
 /* media */
+@media (max-width: 478px) {
+  html {
+    font-size: 9px;
+  }
+  header{
+    z-index: 999999999 !important;
+  }
+  .hero-section {
+    background: url(./../img/444.png) !important;
+  }
+  #game {
+    position: relative; /* Ensure the container is positioned relative for the overlay */
+    background: url(./../img/diego-marin-dMoBlbpDnAE-unsplash.jpg) !important;
+    background-size: cover !important;
+    background-repeat: repeat;
+    background-position: right !important;
+    padding: 1rem 1rem;
+    margin: 0 0 3rem;
+    width: 120vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; 
+  }
+  
+  #game::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to change the darkness level */
+    z-index: 1;
+  }
+  
+  #game > * {
+    position: relative;
+    z-index: 2;
+  }
+
+}
