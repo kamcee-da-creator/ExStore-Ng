@@ -229,16 +229,16 @@ a img:hover {
   box-shadow: 0 4px 8px rgba(255, 105, 135, 0.3);
 }
 .game-flex h6,
-.game-flex small{
+.game-flex small {
   margin-left: 0.4rem;
 }
-.game-flex small{
+.game-flex small {
   color: var(--color-blue3);
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
-.fr{
+.fr {
   background: var(--color-blue2);
   color: var(--color-white);
   display: flex;
@@ -248,7 +248,31 @@ a img:hover {
   padding: 0.2rem 0.6rem;
   font-size: 0.9rem;
 }
-.fr:hover{
+.fr:hover {
   background: var(--color-blue3);
 }
 /* best seller */
+
+/* grid */
+.coming-soon{
+  display: flex;
+  background: var(--color-black);
+  padding: 5rem 0;
+
+  justify-content: center;
+}
+.coming-soon .flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex2{
+  margin-left: 2rem;
+}
+.flex img {
+  width: 400px;
+  margin-bottom: 2rem;
+}
+.flex2 img{
+  width: 293px;
+  margin-bottom: 0.2rem;
+}
